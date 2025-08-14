@@ -1,0 +1,358 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: #2B2B2B;
+	color: aliceblue;
+}
+
+.anim {
+	transition: transform 0.3s ease;
+}
+
+.anim:hover,
+.anim:focus {
+	transform: scale(0.95);
+}
+
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo a {
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+	color: aliceblue;
+	font-family: 'Work Sans', sans-serif;
+	font-style: semi-bold;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.logo::before {
+	content: url('./img/logo.svg');
+	font-weight: 900;
+	position: relative;
+	bottom: -5px;
+	margin-left: 35px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	margin-right: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+nav li {
+	margin-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: aliceblue;
+	font-family: 'Work Sans', sans-serif;
+	font-style: semi-bold;
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+nav .btn {
+	border: 1px solid #A259FF;
+	background-color: #A259FF;
+
+	border-radius: 20px;
+	padding: 20px 30px 20px;
+	gap: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: transform 0.3s ease;
+}
+.btn {
+	transition: transform 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+	transform: scale(0.9);
+}
+
+nav .btn::before {
+	content: url('./img/User.svg');
+	font-weight: 900;
+	position: relative;
+	scale: 1.5;
+}
+
+.hero {
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+
+.hero-content h1 {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 67px;
+}
+
+.hero-content p {
+	font-family: 'Work Sans', sans-serif;
+	font-style: regular;
+	font-weight: 400;
+	font-size: 22px;
+	width: 510px;
+}
+
+.hero-content {
+	margin-right: 30px;
+}
+
+
+.hero .btn {
+	border: 1px solid #A259FF;
+	background-color: #A259FF;
+	width: 220px;
+	height: 60px;
+	border-radius: 20px;
+	padding: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: transform 0.3s ease;
+	margin-top: 30px;
+
+}
+
+
+.hero a {
+	text-decoration: none;
+	color: aliceblue;
+	font-family: 'Work Sans', sans-serif;
+	font-style: semi-bold;
+	font-weight: 600;
+	font-style: normal
+}
+
+.hero .btn::before {
+	content: url('./img/RocketLaunch.svg');
+	font-weight: 900;
+	position: relative;
+	scale: 1.5;
+	padding-right: 10px;
+}
+
+.hero-content p {
+	width: 510px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.hero-content .number {
+	font-weight: 700;
+}
+
+.stats {
+	margin-top: 30px;
+}
+
+.stats p {
+	display: flex;
+}
+
+em {
+	font-weight: 700;
+	margin-right: 50px;
+	margin-bottom: 15px;
+}
+
+
+.hero-image {
+	background-color: #3B3B3B;
+	border-radius: 30px;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.hero-image h2 {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.description {
+	margin-top: 30px;
+}
+
+.hero-image p {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	margin-left: 20px;
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+
+}
+
+
+.hero-image p::before {
+	content: url('./img/Avatar.png');
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+
+.collection {
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px
+}
+
+.collection h2 {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 38px;
+	margin-right: 700px;
+}
+
+.collection .description {
+	margin-right: 575px;
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.collection-1, .collection-2, .collection-3 {
+	margin-right: 30px;
+	max-width: 330px;
+}
+.collection-grid {
+	display: flex;
+	margin-top: 60px;
+}
+.collection-image-1, .collection-image-2, .collection-image-3 {
+	display: flex;
+	margin-top: 15px;
+}
+
+.collection-image-1 img {
+	margin-right: 15px;
+}
+.collection-image-2 img {
+	margin-right: 15px;
+}
+.collection-image-3 img {
+	margin-right: 15px;
+}
+
+.collection-image-1 p {
+	font-family: 'Space Mono', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	border: 1px solid #A259FF;
+	background-color: #A259FF;
+	border-radius: 20px;
+	padding: 35px 15px;
+}
+
+.collection h3 {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	margin-top: 15px;
+}
+
+.collection-1 .name-1:before {
+	content: url('./img/avatar-1.png');
+	font-weight: 900;
+	position: relative;
+	bottom: -5px;
+	padding-right: 10px;
+
+}
+
+
+.collection-1 .name-1 {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.collection-2 .name-2:before {
+	content: url('./img/avatar-2.png');
+	font-weight: 900;
+	position: relative;
+	bottom: -5px;
+	padding-right: 10px;
+
+}
+
+
+.collection-2 .name-2 {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.collection-3 .name-3:before {
+	content: url('./img/avatar-3.png');
+	font-weight: 900;
+	position: relative;
+	bottom: -5px;
+	padding-right: 10px;
+
+}
+
+
+.collection-3 .name-3 {
+	font-family: 'Work Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+
